@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>AWS IVS Demo</title>
+        <script src="https://player.live-video.net/1.2.0/amazon-ivs-player.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/survey-jquery"></script>
+        <style>
+            video {
+                height: 80%;
+                width: 80%;
+                left: 0;
+                top: 50;
+                position: fixed;
+            }
+        </style>
+        <link href="https://unpkg.com/survey-jquery/survey.min.css" type="text/css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+    <body>
+        <div>
+            <button onclick="sendSurvey()">Send Survey</button>
+        </div>
+        <div id="app">
+            <video id="video-player" playsinline controls>
+        </div>
+        <div id="surveyElement"></div>
+        <script src="./app.js"></script>
+    </body>
+</html>
